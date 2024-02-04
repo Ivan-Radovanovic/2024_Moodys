@@ -1,0 +1,20 @@
+Traditional Mean-Variance Model (MV):
+ is based on two key factors:
+Expected Returns (Mean): Maximizing expected returns.
+Risk (Variance): Minimizing portfolio variance.
+It seeks an optimal allocation of limited capital among available financial assets, balancing risk and reward.
+Mean-VaR Portfolio Optimization:
+In the alternative approach, we replace the variance with Value-at-Risk (VaR), an industry-standard risk measure.
+VaR quantifies the maximum potential loss a portfolio may incur over a specified time horizon at a given confidence level.
+By incorporating VaR, we gain insights into extreme downside risk, which is crucial for risk management.
+Challenges and Solution:
+Realistic portfolio optimization using VaR is complex due to its non-convex, NP-hard nature.
+Optimizing VaR directly is computationally intractable.
+To address this, an efficient learning-guided hybrid multi-objective evolutionary algorithm (MODE-GL) has been proposed.
+MODE-GL tackles real-world constraints (e.g., cardinality, quantity, pre-assignment, round-lot, and class constraints) while optimizing mean-VaR portfolios.
+It promotes efficient convergence by guiding the evolutionary search toward promising regions of the solution space.
+Experimental Results:
+Historical daily financial market data from S&P 100 and S&P 500 indices were used.
+MODE-GL outperformed existing techniques (Non-dominated Sorting Genetic Algorithm and Strength Pareto Evolutionary Algorithm) in terms of solution quality and computational time.
+The proposed algorithm provides complex portfolio optimization without simplifications, yielding good solutions within reasonable timeframes.
+In summary, the mean-VaR framework offers a valuable perspective on market risk exposure, allowing investors to make informed decisions while considering extreme events.
